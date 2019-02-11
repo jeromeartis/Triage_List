@@ -40,7 +40,7 @@ let deleted = function(){
   let indexOf = patientList.indexOf(getPatient);
   // const deletePatient = prompt("Delete Patient List by index number");
   // console.log(`Patient: ${patientList[deletePatient]} has been removed`);
-  delete patientList[indexOf];
+  patientList.splice(indexOf, 1);
   alert(patientList);
 };
 
